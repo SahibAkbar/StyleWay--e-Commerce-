@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" id="google_fonts-css" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C300%2C400%2C500%2C600%2C700%2C800%2C900&amp;ver=1.0.0#038;subset=latin%2Clatin-ext" media="all">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <div class="topbar-outer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="content">
+                <div class="header-offer">
+                  <h3>Free shipping on domestic orders over $150</h3>
+                </div>
+                <div class="header-link">
+                  <div class="user">
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                        Login / Register
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="account.html">User Login</a></li>
+                        <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="contact">
+                    <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                        Contact Us
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="about.html">About us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-3 gree">
+              <div class="content-left">
+                <picture>
+                  <a href="#">
+                    <img src="assets/img/logo.png" class="img-fluid" alt="">
+                  </a>
+                </picture>
+              </div>
+            </div>
+            <div class="col-lg-6 free">
+              <div class="content-center">
+                <div class="menu-nav">
+                  <ul class="d-flex">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="shop.html">SHOP</a></li>
+                      <li><a href="product.html">Product</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="checkout.html">CheckOut</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg-3 tree">
+              <div class="content-right">
+                <ul>
+                  <li class="search-rt">
+                    <a href="#">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      Search
+                    </a>
+                    <form role="search" method="get" class="woocommerce-product-search" action="" style="display: block;">
+                      <input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products…" value="" name="s">
+                      <button type="submit" value="Search">Search</button>
+                    </form>
+                  </li>
+                  <li class="wshlist">
+                    <a href="wishlist.html" >
+                      <i class="fa-regular fa-heart"></i>
+                      <span id="getWishlist" ></span>
+                    </a>
+                  </li>
+                  <li class="minicart-wrap">
+                    <a href="#miniCart">
+                      <i class="fa-solid fa-bag-shopping"></i>
+                      <div class="cart-price">
+                        <span class="price-left">0</span>
+                        /
+                        <span class="price-right">£0.00</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="small-menu-open-btn d-block d-lg-none">
+                    <a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0">
+                      <i class="fa-solid fa-bars"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm-full">
+        <div class="inner-menu-sm">
+            <div class="menu-sm-top">
+                <a href="#" class="button-close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="menu-sm-contact">
+                <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="menu-sm-user-info">
+                <ul class="dropdown-wrap">
+                    <li class="dropdown">
+                        <button class="btn dropdown-toggle p-0" type="button" id="settingButtonTwo" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user" data-tippy="Login & Register"  data-tippy-inertia="true"
+                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                            data-tippy-theme="sharpborder"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingButtonTwo">
+                            <li><a class="dropdown-item" href="my-account.html">My account</a></li>
+                            <li><a class="dropdown-item" href="account.html">Login | Register</a></li>
+                        </ul>
+                    </li>
+                    <li class="favourite">
+                        <a href="wishlist.html">
+                            <i class="fa-solid fa-heart" data-tippy="Wishlist" data-tippy-inertia="true"
+                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                            data-tippy-theme="sharpborder"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-sm-area">
+                <nav class="menu-sm-navigation">
+                    <ul class="small-menu">
+                        <li class="small-menu-item">
+                            <a href="index.html">
+                                <span class="hm-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="small-menu-item">
+                            <a href="shop.html">
+                                <span class="hm-text">Shop</span>
+                            </a>
+                        </li>
+                        <li class="small-menu-item">
+                            <a href="product.html">
+                                <span class="mm-text">Product</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <span class="m-text">About Us</span>
+                            </a>
+                        </li>
+                        <li class="small-menu-item">
+                            <a href="checkout.html">
+                                <span class="hm-text">CheckOut</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                <span class="m-text">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content modal-bg-dark">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-tippy="Close" data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-search">
+                        <span class="searchbox-info">Start typing and press Enter to search or ESC to close</span>
+                        <form action="#" class="hm-searchbox">
+                            <input type="text" name="Search..." value="Search..." onblur="if(this.value==''){this.value='Search...'}" onfocus="if(this.value=='Search...'){this.value=''}" autocomplete="off">
+                            <button class="search-btn" type="submit" aria-label="searchbtn">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="home-slider">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12 p-0">
+                <div class="slider">
+                  <div class="slide-ana">
+                      <div class="content">
+                        <picture>
+                          <img src="assets/img/bg/main-banner-01.jpg" alt="">
+                        </picture>
+                        <span class="title">Slide One Explanation</span>
+                      </div>
+                      <div class="content">
+                        <picture>
+                          <img src="assets/img/bg/main-banner-02.jpg" alt="">
+                        </picture>
+                        <span class="title">Slide One Explanation</span>
+                      </div>
+                      <div class="content">
+                        <picture>
+                          <img src="assets/img/bg/main-banner-01.jpg" alt="">
+                        </picture>
+                        <span class="title">Slide One Explanation</span>
+                      </div>
+                      <div class="content">
+                        <picture>
+                          <img src="assets/img/bg/main-banner-02.jpg" alt="">
+                        </picture>
+                        <span class="title">Slide One Explanation</span>
+                      </div>
+                      <!-- <div style="background-image: url('https://source.unsplash.com/1600x600/?cat')"><span class="title">Slide One Explanation</span></div>
+                      <div style="background-image: url('https://source.unsplash.com/1600x600/?dog')"><span class="title">Slide Two Explanation</span></div>
+                      <div style="background-image: url('https://source.unsplash.com/1600x600/?monkey')"><span class="title">Slide Three Explanation</span></div>
+                      <div style="background-image: url('https://source.unsplash.com/1600x600/?nature')"><span class="title">Slide Four Explanation</span></div> -->
+                  </div>
+                  <span class="icon-arrow_back" id="prev">-</span>
+                  <span class="icon-arrow_forward" id="next"></span>
+                </div>
+                <!-- <h1>Salam Alekum</h1> -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="categories-small">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/category-icon-05-65x65_t.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/6.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/2.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/3.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/4.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="content">
+                  <div class="small-img">
+                    <picture>
+                      <a href="#">
+                        <img src="assets/img/Categories-Small/5.png" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <a href="#">Girls Dress</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="collaction">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="head">
+                  <h1>Latest Collection</h1>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="tabs">
+                  <ul>
+                    <li>
+                      <a href="#">Dress</a>
+                    </li>
+                    <li>
+                      <a href="#">Shorts</a>
+                    </li>
+                    <li>
+                      <a href="#">Trousers</a>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/1.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/2.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <button id="favorite">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/3.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/4.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <button id="favorite">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/4.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/3.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <button id="favorite">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/2.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/1.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <button id="favorite">
+                          <i class="fa-regular fa-heart"></i>
+                        </button>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pwp-thema">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="content-left">
+                  <div class="img-arr">
+                    <picture>
+                      <a href="#">
+                        <img class="img-fluid" src="assets/img/More/1.jpg" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <span>30% Discount</span>
+                    <h1>Women Special</h1>
+                    <h1> Collection</h1>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="content-center">
+                  <div class="img-center">
+                    <picture>
+                      <a href="#">
+                        <img class="img-fluid" src="assets/img/More/2.jpg" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <span>Summer Special offer</span>
+                    <h1>SALE!</h1>
+                    <p>Up To 50% Discount</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="content-left">
+                  <div class="img-arr">
+                    <picture>
+                      <a href="#">
+                        <img class="img-fluid" src="assets/img/More/3.jpg" alt="">
+                      </a>
+                    </picture>
+                  </div>
+                  <div class="text">
+                    <span>20% Discount</span>
+                    <h1>Men Special</h1>
+                    <h1> Collection</h1>
+                    <a href="#">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="collaction">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="head">
+                  <h1>Special Collection</h1>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="tabs">
+                  <ul>
+                    <li>
+                      <span>113 days</span>
+                    </li>
+                    <li>
+                      <span>: 05hours</span>
+                    </li>
+                    <li>
+                      <span>: 16mins</span>
+                    </li>
+                    <li>
+                      <span>: 25secs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/1.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/2.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/3.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/4.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/4.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/3.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="content-card">
+                  <div class="card-img">
+                    <a href="#">
+                      <picture>
+                        <img class="img-fluid img-top" src="assets/img/Product/2.jpg" alt="">
+                        <img class="img-fluid img-back" src="assets/img/Product/1.jpg" alt="">
+                      </picture>
+                      <span>-19%</span>
+                    </a>
+                    <div class="product-button">
+                      <div class="wishlist hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-heart"></i>
+                        </a>
+                      </div>
+                      <div class="compare hvr">
+                        <a href="#">
+                          <i class="fa-solid fa-code-compare"></i>
+                        </a>
+                      </div>
+                      <div class="view hvr">
+                        <a href="#">
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-regular fa-star"></i></a>
+                      </li>
+                    </ul>
+                    <h1>Coodo Consequat aute</h1>
+                    <p>£80.00</p>
+                    <div class="button-card">
+                      <a href="#">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-1.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-2.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-3.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-4.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-5.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="logo">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/Partner/brand-6.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="bg-image">
+                  <picture>
+                    <a href="#">
+                      <img class="img-fluid" src="assets/img/More/video-poster.jpg" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="info-content">
+                  <div class="bg-image">
+                    <picture>
+                      <img src="assets/img/More/video-poster.jpg" alt="">
+                    </picture>
+                    <div class="text">
+                      <div class="t-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                      </div>
+                      <div class="t-text">
+                        <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
+                      </div>
+                      <div class="t-title">
+                        <a href="#">- Din Desuza</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="latest-blog">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="head">
+                  <h1>Our Latest Blog</h1>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="content">
+                  <div class="post-img">
+                    <picture>
+                      <img class="img-fluid" src="assets/img/Blog-small/1.jpg" alt="">
+                    </picture>
+                    <div class="blog-hover">
+                      <div class="links">
+                        <a href="#">
+                          <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="blog-meta">
+                      <span>Jan 29,2000</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#">Anyway REPS is a NYC agency repres enting photographers</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="content">
+                  <div class="post-img">
+                    <picture>
+                      <img class="img-fluid" src="assets/img/Blog-small/1.jpg" alt="">
+                    </picture>
+                    <div class="blog-hover">
+                      <div class="links">
+                        <a href="#">
+                          <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="blog-meta">
+                      <span>Jan 29,2000</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#">Anyway REPS is a NYC agency repres enting photographers</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="content">
+                  <div class="post-img">
+                    <picture>
+                      <img class="img-fluid" src="assets/img/Blog-small/1.jpg" alt="">
+                    </picture>
+                    <div class="blog-hover">
+                      <div class="links">
+                        <a href="#">
+                          <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="blog-meta">
+                      <span>Jan 29,2000</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#">Anyway REPS is a NYC agency repres enting photographers</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="content">
+                  <div class="post-img">
+                    <picture>
+                      <img class="img-fluid" src="assets/img/Blog-small/1.jpg" alt="">
+                    </picture>
+                    <div class="blog-hover">
+                      <div class="links">
+                        <a href="#">
+                          <i class="fa-solid fa-plus"></i>
+                        </a>
+                        <a href="#">
+                          <i class="fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="blog-meta">
+                      <span>Jan 29,2000</span>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <a href="#">Anyway REPS is a NYC agency repres enting photographers</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <section class="service">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="service-content">
+                  <div class="left">
+                    <span class="icon-img1"></span>
+                    <h1>Worldwide Shipping</h1>
+                    <div class="text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="service-content">
+                  <div class="left">
+                    <span class="icon-img2"></span>
+                    <h1>
+                      Easy 30 Day Returns</h1>
+                    <div class="text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="service-content">
+                  <div class="left">
+                    <span class="icon-img3"></span>
+                    <h1>Money Back Guarentee</h1>
+                    <div class="text">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cart-small">
+          <div class="cart-menu-wrapper" id="cart-menu">
+            <div class="cart-menu-full">
+                <div class="cart-menu-content">
+                    <div class="cart-menu-heading">
+                        <h4 class="mb-0">Shopping Cart</h4>
+                        <a href="#" class="btn-close-custom">
+                            <i class="fa-solid fa-xmark" data-tippy="Close" data-tippy-inertia="true"
+                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                            data-tippy-theme="sharpborder"></i>
+                        </a>
+                    </div>
+                    <ul class="cart-menu-list">
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                        <li class="cart-menu-products">
+                            <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                            data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                            data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                            <div class="product-item-img-wrapper">
+                                <a href="single-product-variable.html" class="product-item-img">
+                                    <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                </a>
+                                </div>
+                            <div class="product-item-content">
+                                <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                <span class="product-item-qty">1 x $23.45</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-total-price">
+                    <span>Subtotal</span>
+                    <span class="ammount">$79.35</span>
+                </div>
+                <div class="cart-menu-btn-full gap-2 d-grid pb-60">
+                    <a href="cart.html" class="btn btn-dark btn-cart">View Cart</a>
+                    <a href="checkout.html" class="btn btn-dark btn-cart">Checkout</a>
+                </div>
+            </div>
+          </div>
+          <div class="cart-menu-overlay"></div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div class="foot-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="info-contact">
+                <div class="title">
+                  <h5>Store Information</h5>
+                </div>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>60, 29th Street, San Francisco, CA 94110, United States of America</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>(+00) 123-456-789</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-sim-card"></i>
+                    <span>123456</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">demo@example.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="info-link">
+                <div class="title">
+                  <h5>Information</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="info-link">
+                <div class="title">
+                  <h5>Extras</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="info-link">
+                <div class="title">
+                  <h5>Static Block</h5>
+                </div>
+                <ul>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                  <li><a href="#">Bookmark</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="subscribe">
+                <div class="header">
+                  <h6>Our Newsletter</h6>
+                </div>
+                <div class="context">
+                  <p>Get 25% Off Next Puchase. Pellentesque habitant morbi tristique senectuse.</p>
+                  <form>
+                    <div class="one">
+                      <input class="tnp-email" type="email" name="ne" value="" required="">
+                      <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                  </form>
+                  <div class="social-icon">
+                    <ul>
+                      <li><a class="fb" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                      <li><a class="tw" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a class="gg" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                      <li><a class="sky" href="#"><i class="fa-brands fa-skype"></i></a></li>
+                      <li><a class="ins" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <p>© 2021 – Ecommerce WP by Wpbingo</p>
+            </div>
+            <div class="col-lg-6" style="text-align: end;">
+              <picture>
+                <img src="assets/img/More/logo-brand.png" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile bar start -->
+    <div class="mobile-bar d-lg-none">
+      <ul class="mobile-bar-menu">
+          <li class="small-menu-open-btn d-block d-lg-none"><a href="#mobileMenu" class="mobile-menu_btn toolbar-btn pl-0"><i class="fa-solid fa-bars"></i></i><span class="menu-name">Menu</span></a></li>
+          <li><a href="wishlist.html"><i class="fa-regular fa-heart"></i><span class="menu-name">Wishlist</span></a></li>
+          <li><a href="#exampleModal" class="search-btn bt" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-magnifying-glass"></i><span class="menu-name">Search</span></a></li>
+          <li><a href="myaccount.html"><i class="fa-regular fa-user"></i><span class="menu-name">Account</span></a></li>
+      </ul>
+    </div>
+    <!-- Mobile bar end -->
+
+    <!-- Go To Top -->
+    <div class="to-top-wrapper">
+      <a class="to-top" href="">
+          <i class="fa-solid fa-angles-up"></i>
+      </a>
+    </div>
+    <!-- Go To Top End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

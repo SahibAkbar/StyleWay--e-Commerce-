@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+    <body>
+      <header>
+        <div class="topbar-outer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="content">
+                  <div class="header-offer">
+                    <h3>Free shipping on domestic orders over $150</h3>
+                  </div>
+                  <div class="header-link">
+                    <div class="user">
+                      <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          Login / Register
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">User Login</a></li>
+                          <li><a class="dropdown-item" href="#">checkout</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="contact">
+                      <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
+                          Contact Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Feature</a></li>
+                          <li><a class="dropdown-item" href="#">About us</a></li>
+                          <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-header">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-3">
+                <div class="content-left">
+                  <picture>
+                    <a href="#">
+                      <img src="assets/img/logo.png" class="img-fluid" alt="">
+                    </a>
+                  </picture>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="content-center">
+                  <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                              Home
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="shop.html">
+                              Shop
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                              About
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                              Contact
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="blog.html">
+                              Blog
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">
+                              Feature
+                            </a>
+                          </li>
+                        </ul>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="content-right">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        Wishlist
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="cart-price">
+                          <span class="price-left">0</span>
+                          /
+                          <span class="price-right">£0.00</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-menu-wrapper" id="cart-menu">
+          <div class="cart-menu-full">
+              <div class="cart-menu-content">
+                  <div class="cart-menu-heading">
+                      <h4 class="mb-0">Shopping Cart</h4>
+                      <a href="#" class="btn-close-custom">
+                          <i class="fa-solid fa-xmark" data-tippy="Close" data-tippy-inertia="true"
+                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                          data-tippy-theme="sharpborder"></i>
+                      </a>
+                  </div>
+                  <ul class="cart-menu-list">
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                      <li class="cart-menu-products">
+                          <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                          data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                          data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                          <div class="product-item-img-wrapper">
+                              <a href="single-product-variable.html" class="product-item-img">
+                                  <img src="img/products/product-5.png" alt="Image">
+                              </a>
+                              </div>
+                          <div class="product-item-content">
+                              <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                              <span class="product-item-qty">1 x $23.45</span>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="cart-total-price">
+                  <span>Subtotal</span>
+                  <span class="ammount">$79.35</span>
+              </div>
+              <div class="cart-menu-btn-full gap-2 d-grid pb-60">
+                  <a href="cart.html" class="btn btn-dark btn-cart">View Cart</a>
+                  <a href="checkout.html" class="btn btn-dark btn-cart">Checkout</a>
+              </div>
+          </div>
+        </div>
+        <div class="cart-menu-overlay"></div>
+    </header>
+    <main>
+      <article>
+        <section class="about-title">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h1>Wishlist</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="wishlist-page">
+            <div class="wishlist-full pt-100 pb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="#">
+                                <div class="table-content table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="product-remove">remove</th>
+                                                <th class="product-thumbnail">images</th>
+                                                <th class="cart-product-name">Product</th>
+                                                <th class="product-price">Unit Price</th>
+                                                <th class="cart-btn">add to cart</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="product-remove">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-xmark" data-tippy="Remove" data-tippy-inertia="true"
+                                                    data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                    data-tippy-arrow="true" data-tippy-theme="sharpborder"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="product-thumbnail">
+                                                    <a href="#">
+                                                        <img src="assets/img/SingleProduct/small/1.jpg" alt="Wishlist Thumbnail">
+                                                    </a>
+                                                </td>
+                                                <td class="product-name"><a href="#">American Marigold</a></td>
+                                                <td class="product-price"><span class="amount">$23.45</span></td>
+                                                <td class="cart-btn"><a href="#">add to cart</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-remove">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-xmark" data-tippy="Remove" data-tippy-inertia="true"
+                                                    data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                    data-tippy-arrow="true" data-tippy-theme="sharpborder"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="product-thumbnail">
+                                                    <a href="#">
+                                                        <img src="assets/img/SingleProduct/small/1.jpg" alt="Wishlist Thumbnail">
+                                                    </a>
+                                                </td>
+                                                <td class="product-name"><a href="#">Black Eyed Susan</a></td>
+                                                <td class="product-price"><span class="amount">$25.45</span></td>
+                                                <td class="cart-btn"><a href="#">add to cart</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="product-remove">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-xmark" data-tippy="Remove" data-tippy-inertia="true"
+                                                    data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                    data-tippy-arrow="true" data-tippy-theme="sharpborder"></i>
+                                                    </a>
+                                                </td>
+                                                <td class="product-thumbnail">
+                                                    <a href="#">
+                                                        <img src="assets/img/SingleProduct/small/1.jpg" alt="Wishlist Thumbnail">
+                                                    </a>
+                                                </td>
+                                                <td class="product-name"><a href="#">Bleeding Heart</a></td>
+                                                <td class="product-price"><span class="amount">$30.45</span></td>
+                                                <td class="cart-btn"><a href="#">add to cart</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-small">
+            <div class="cart-menu-wrapper" id="cart-menu">
+              <div class="cart-menu-full">
+                  <div class="cart-menu-content">
+                      <div class="cart-menu-heading">
+                          <h4 class="mb-0">Shopping Cart</h4>
+                          <a href="#" class="btn-close-custom">
+                              <i class="fa-solid fa-xmark" data-tippy="Close" data-tippy-inertia="true"
+                              data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                              data-tippy-theme="sharpborder"></i>
+                          </a>
+                      </div>
+                      <ul class="cart-menu-list">
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                          <li class="cart-menu-products">
+                              <a class="product-item-delete" href="#"><i class="fa-solid fa-xmark" data-tippy="Remove"
+                              data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+                              data-tippy-arrow="true" data-tippy-theme="sharpborder"></i></a>
+                              <div class="product-item-img-wrapper">
+                                  <a href="single-product-variable.html" class="product-item-img">
+                                      <img src="assets/img/SingleProduct/small/1.jpg" alt="Image">
+                                  </a>
+                                  </div>
+                              <div class="product-item-content">
+                                  <a class="product-item-title" href="single-product-variable.html">American Marigold</a>
+                                  <span class="product-item-qty">1 x $23.45</span>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="cart-total-price">
+                      <span>Subtotal</span>
+                      <span class="ammount">$79.35</span>
+                  </div>
+                  <div class="cart-menu-btn-full gap-2 d-grid pb-60">
+                      <a href="cart.html" class="btn btn-dark btn-cart">View Cart</a>
+                      <a href="checkout.html" class="btn btn-dark btn-cart">Checkout</a>
+                  </div>
+              </div>
+            </div>
+            <div class="cart-menu-overlay"></div>
+          </section>
+      </article>
+    </main>
+    <footer>
+        <div class="foot-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="info-contact">
+                  <div class="title">
+                    <h5>Store Information</h5>
+                  </div>
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>60, 29th Street, San Francisco, CA 94110, United States of America</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <span>(+00) 123-456-789</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-sim-card"></i>
+                      <span>123456</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="#">demo@example.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="info-link">
+                  <div class="title">
+                    <h5>Information</h5>
+                  </div>
+                  <ul>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="info-link">
+                  <div class="title">
+                    <h5>Extras</h5>
+                  </div>
+                  <ul>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="info-link">
+                  <div class="title">
+                    <h5>Static Block</h5>
+                  </div>
+                  <ul>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                    <li><a href="#">Bookmark</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="subscribe">
+                  <div class="header">
+                    <h6>Our Newsletter</h6>
+                  </div>
+                  <div class="context">
+                    <p>Get 25% Off Next Puchase. Pellentesque habitant morbi tristique senectuse.</p>
+                    <form>
+                      <div class="one">
+                        <input class="tnp-email" type="email" name="ne" value="" required="">
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                      </div>
+                    </form>
+                    <div class="social-icon">
+                      <ul>
+                        <li><a class="fb" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="tw" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="gg" href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a class="sky" href="#"><i class="fa-brands fa-skype"></i></a></li>
+                        <li><a class="ins" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <p>© 2021 – Ecommerce WP by Wpbingo</p>
+              </div>
+              <div class="col-lg-6" style="text-align: end;">
+                <picture>
+                  <img src="assets/img/More/logo-brand.png" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- Go To Top -->
+    <div class="to-top-wrapper">
+        <a class="to-top" href="">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </div>
+    <!-- Go To Top End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    </body>
+</head>
